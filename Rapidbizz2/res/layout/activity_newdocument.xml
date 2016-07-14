@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Title"
+        android:id="@+id/title" />
+
+    <EditText
+        android:id="@+id/title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:layout_toRightOf="@+id/title">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="SubTitle"
+        android:id="@+id/subTitle"
+        android:layout_below="@+id/title" />
+
+    <EditText
+        android:id="@+id/subtitle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:layout_toRightOf="@+id/subTitle">
+    </EditText>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Content"
+        android:id="@+id/content"
+        android:layout_below="@+id/subTitle" />
+
+    <EditText
+        android:id="@+id/content1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="30dp"
+        android:layout_toRightOf="@+id/content">
+    </EditText>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:visibility="invisible" />
+
+</LinearLayout>

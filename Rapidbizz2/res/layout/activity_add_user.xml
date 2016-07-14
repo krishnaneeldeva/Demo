@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Add Users"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <EditText 
+        android:layout_height="wrap_content"
+		android:layout_width="match_parent" 
+		android:id="@+id/add_user_text"></EditText>
+    <Button 
+        android:id="@+id/add_users_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add User"> 
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Existing Sharing Permissions"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <ListView
+        android:id="@+id/add_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    <LinearLayout
+        android:id="@+id/no_users_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="No users added yet, type the user id and click on the button to share permissons."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rapidbizz1.MainActivity" >
+
+    <item
+        android:id="@+id/action_new"
+        android:icon="@drawable/addbutton"
+        android:showAsAction="ifRoom"
+        android:title="Add Note">
+    </item>
+    <item 
+        android:id="@+id/action_shared"
+        android:icon="@drawable/downloadbutton"
+        android:showAsAction="ifRoom"
+        android:title="Shared Documents"/>
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="History"/>
+	<item
+        android:id="@+id/action_sync"
+        android:icon="@drawable/addbutton"
+        android:showAsAction="never"
+        android:title="Refresh">
+    </item>
+    <item
+        android:id="@+id/action_logout"
+        android:showAsAction="never"
+        android:title="Logout">
+    </item>
+    
+   <item
+        android:id="@+id/action_login"
+        android:showAsAction="never"
+        android:title="Login">
+    </item>
+
+</menu>

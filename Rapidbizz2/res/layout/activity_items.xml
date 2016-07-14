@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+    
+    <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true" />
+    <TextView
+        	android:id="@+id/id1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/subtitle4"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/content4"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/updatedat1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="visible">
+    </TextView>
+    <TextView
+        	android:id="@+id/otheruser1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/author1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/objectid"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="visible">
+    </TextView>
+    <TextView
+        	android:id="@+id/isdraft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    <TextView
+        	android:id="@+id/createdat"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:visibility="invisible">
+    </TextView>
+    
+
+</RelativeLayout>
