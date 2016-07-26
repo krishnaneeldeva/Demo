@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+
+	 <script type="text/javascript" src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="controller.js"></script>
+	<title>Posts</title>
+
+
+
+
+</head>
+<body >
+	<div ng-app = "myApp">
+		<div class = "container" ng-controller = "postCtrl">
+			<input type="text" ng-model ="PostContent" >
+			<button ng-click="DSubmit()">Post</button>
+
+			<div ng-repeat="x in details">
+				Post({{$index+1}}):{{x.postcontent}}
+				
+					<div>
+						<input type= "text" ng-model ="CommentContent">
+						<button ng-click= "CSubmit(CommentContent,$index)">comment</button><br>
+						<div ng-repeat="y in x.commentcontent track by $index">
+							{{y}}
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
